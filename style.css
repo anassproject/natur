@@ -1,0 +1,326 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: 75%;
+	margin: 0 auto;
+}
+button {
+	cursor: pointer;
+}
+button:focus {
+	outline: 0;
+}
+.bold-text {
+	font-weight: 900;
+}
+.left-marg {
+	margin-left: 6em;
+}
+.right-marg {
+	margin-right: 6em;
+}
+body {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 200;
+	background: #fbfbfb;
+	color: #353535;
+}
+.mobile-boka {
+	display: none;
+}
+.navbar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	min-height: 6vh;
+	display: flex;
+	justify-content: space-around;
+	background: #fbfbfb;
+	z-index: 10;
+	box-shadow: 0px 1.6px 4px rgb(0,0,0,.17);
+	padding: 1.7em 0;
+}
+.menu {
+	display: flex;
+	align-items: center;
+}
+.menu li {
+	list-style-type: none;
+}
+.menu li a {
+	text-decoration: none;
+	color: #454545;
+}
+.main-logo {
+	height: 2.9em;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+/* LANDING ********************************************/
+.landing {
+	width: 100%;
+}
+button {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 900;
+	font-size: 1em;
+	letter-spacing: 1px;
+	padding: 1em 2.2em;
+	border-radius: 35px;
+}
+button.book-table {
+	display: block;
+	border: none;
+	margin: 0 auto;
+	position: relative;
+	bottom: 60vh;
+	z-index: 2;
+}
+button.book-table:hover {
+	background: #5BD9B3;
+	color: #fbfbfb;
+}
+.white-bar {
+	background: #fafafa;
+	height: 7vh;
+	z-index: 10;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+/* MENU SECTION *********************************************/
+.menu-section {
+	padding: 10vh 0 5vh 0;
+}
+.two-col {
+	display: flex;
+}
+.section-title {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+.left, .right {
+	width: 50%;
+	padding: 2em;
+	font-size: 1.2em;
+}
+.right div {
+	padding: 2em;
+	text-align: center;
+	background: repeating-linear-gradient(45deg, #fbfbfb, #fbfbfb 5px, #f3f3f3 5px, #f3f3f3 10px);
+}
+.right .square1 {
+	margin-bottom: 1.5em;
+}
+.square1 h1, .square2 h1 {
+	font-size: 5em;
+}
+/* GIFT CARDS SECTION **********************************/
+.gift-section {
+	padding: 15vh 0;
+	text-align: center;
+}
+.gift-section h1 {
+	letter-spacing: 1px;
+}
+.gift-section p {
+	width: 60%;
+	margin: 0 auto;
+}
+.buynow-btn {
+	margin-top: 3em;
+	border: #000 solid 2px;
+	background: none;
+}
+.buynow-btn:hover {
+	background: #000;
+	color: #f7f7f7;
+}
+/* TESTIMONIAL SECTION ********************************/
+.testimonial {
+	padding: 17vh 0;
+	background: url('testi.jpg') center/cover;
+	color: #f6f6f6;
+	text-align: center;
+}
+.testimonial img {
+	height: 4em;
+	margin-bottom: 1em;
+}
+.testimonial h1 {
+	font-size: 2.5em;
+	letter-spacing: 1.5px;
+}
+.testimonial p {
+	font-size: 1.2em;
+}
+/* SLIDER SECTION ****************************************************/
+.slider-section {
+	padding: 17vh 0;
+	background: #5BD9B3;
+}
+.slider-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.slider, .slider-text {
+	width: 48.5%;
+}
+.slider {
+	background: url('img1.jpg') center/cover;
+	height: 450px;
+	position: relative;
+	transition: all 0.7s ease;
+}
+.silder-controls {
+	background: #222;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.slider-btn {
+	user-select: none;
+	cursor: pointer;
+	padding: 0.8em 1.2em;
+	color: white;
+}
+.slider-text {
+	background: #fbfbfb;
+	padding: 4em 2em;
+}
+.slider-text h2 {
+	margin-bottom: 1em;
+}
+/* MAP SECTION *********************************************/
+.map-wrapper {
+	display: flex;
+}
+.map-wrapper div {
+	width: 50%;
+}
+.map-img {
+	background: url('map.jpg') center/cover;
+}
+.map-text h3 {
+	font-size: 1.4em;
+	margin-bottom: 0.7em;
+}
+.map-text {
+	font-size: 1.1em;
+	padding: 5em 3em;
+}
+/* FOOTER SECTION ******************************************/
+.footer-section {
+	text-align: center;
+	color: #fbfbfb;
+	padding: 20vh 0;
+	background: #1D1D1B;
+}
+.footer-wrapper img {
+	height: 3em;
+}
+.footer-line {
+	width: 10em;
+	margin: 2.5em auto;
+}
+
+/************************************ MOBILE MEDIA QUERY ****************************/
+@media screen and (max-width: 430px){
+	body {
+		font-size: 0.8em;
+	}
+	.container {
+		width: 95%;
+	}
+	.navbar {
+		padding: 0;
+		min-height: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.mobile-boka {
+		display: block;
+		background: #5BD9B3;
+		padding: 1em 1.2em;
+		color: #fbfbfb;
+		letter-spacing: 1px;
+		font-weight: 900;
+	}
+	.main-logo {
+		height: 1.9em;
+		margin-left: 1em;
+	}	
+	ul li, .book-table {
+		display: none;
+	}
+	.landing {
+		margin-top: 1.9em;
+	}
+	.two-col, .slider-wrapper, .map-wrapper {
+		display: block;
+	}
+	.left, .right, .slider, .slider-text, .map-wrapper div {
+		width: 100%;
+		padding: 0;
+	}
+	.menu-section, .gift-section, .testimonial, .slider-section {
+		padding: 6vh 0;
+	}
+	.square1 {
+		margin-top: 5vh;
+	}
+	.gift-section p {
+		width: 95%;
+		font-size: 1.2em;
+	}
+	.testimonial h1 {
+		font-size: 1.3em;
+	}
+	.slider {
+		height: 95vw;
+		width: 95vw;
+	}
+	.slider-text {
+		padding: 4vh 2vh;
+		font-size: 1.2em;
+	}
+	.map-img {
+		height: 30vh;
+	}
+	div.map-text {
+		padding: 6vh 3vh;
+		font-size: 1.3em;
+	}
+	.footer-section {
+	 	padding: 7vh 0 18vh 0;
+	}
+	.footer-wrapper img {
+		height: 2em;
+	}
+	.footer-wrapper p {
+		width: 70%;
+		margin:  0 auto;
+	}
+}
+/********************************************** LARGE SCREENS *********************************/
+@media screen and (min-width: 1600px){
+	.container {
+		width: 65%;
+	}
+}
+@media screen and (min-width: 1900px){
+	.container {
+		width: 55%;
+	}
+}
+@media screen and (min-width: 2500px){
+	.container {
+		width: 45%;
+	}
+}
